@@ -21,4 +21,3 @@ RUN npm install webdriver-manager protractor gulp chromedriver -g
 # Define working directory.
 WORKDIR /data
 CMD ["-"]
-ENTRYPOINT ["jq"]
