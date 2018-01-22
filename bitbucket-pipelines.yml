@@ -1,0 +1,27 @@
+image: 
+  name: paperapp/selenium-testing
+  username: paperapp
+  password: $DOCKER_PW
+  email: shane@get-paper.com
+
+pipelines:
+  default:
+    - step:
+        name: Default Pipeline
+        caches:
+          - node
+        script: 
+          - npm install
+          - webdriver-manager update
+          - webdriver-manager start & sleep 5; gulp
+  
+  custom:
+    uptime check:
+      - step:
+          name: Master Pipeline
+          caches:
+            - node
+          script: 
+            - npm install
+            - webdriver-manager update
+            - webdriver-manager start & sleep 5; gulp

@@ -1,0 +1,25 @@
+{
+  "name": "bee-drill",
+  "version": "0.0.1",
+  "description": "example implementation for automated NoSQL injection testing",
+  "scripts": {
+    "webdriver-update": "webdriver-manager update"
+  },
+  "dependencies": {
+    "assert": "1.4.1",
+    "chai": "4.1.2",
+    "child_process": "^1.0.2",
+    "chromedriver": "^2.34.0",
+    "gulp": "^3.9.1",
+    "gulp-mocha": "^4.3.1",
+    "gulp-protractor": "^4.1.0",
+    "gulp-util": "^3.0.8",
+    "mocha": "4.0.1",
+    "path": "^0.12.7",
+    "protractor": "5.1.2",
+    "run-sequence": "^2.2.0",
+    "selenium-server": "3.6.0",
+    "selenium-webdriver": "3.6.0",
+    "superagent": "3.6.3"
+  }
+}
